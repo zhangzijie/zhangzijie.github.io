@@ -1,0 +1,375 @@
+<!DOCTYPE HTML><!-- _partial/head -->
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HTTP状态码 | 张子杰的博客</title>
+  <meta name="author" content="张子杰">
+  
+  <meta name="description" content="欢迎来到张子杰的个人网站，一个托管于github的博客。">
+  
+  <meta name="keywords" content="张子杰,博客">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="HTTP状态码"/>
+  <meta property="og:site_name" content="张子杰的博客"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/true" title="张子杰的博客" type="application/atom+xml">
+  
+  
+	<link href="/favicon.ico" rel="icon" type="image/x-ico">
+  
+  
+  <link rel="stylesheet" href="/css/index.css" media="screen" tyep="text/css">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.cerulean.min.css" media="screen" type="text/css">
+  
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+  
+  <!-- analytics -->
+  <!-- _partial/post/google_analytics -->
+
+
+  <meta name="baidu-site-verification" content="CLJNal3Osm" />
+  <meta name="sogou_site_verification" content="vIsarwofbh"/>
+  <meta name="msvalidate.01" content="C14C91E65E6A27FD03D26391E29BB2E7" />
+  <meta name="shenma-site-verification" content="9371bdccb3b7d9f3b700285b0271b069" />
+  <meta name="google-site-verification" content="na-P7V2fYBnMhXbCm0c55oRF5ETB5rxDJnAI10SBVis" />
+  <script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?173d7ff2c96464fcd08f3e1baafd4f12";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+
+</head>
+
+ <body>
+ <a href="https://github.com/zhangzijie"><img style="position: absolute; top: 0; right: 0; border: 0; margin:0; z-index:9999;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+ <!-- _partial/navigation -->
+<nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">张子杰的博客</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/" title="Home Page.">
+			  <i class="fa fa-home"></i>首页
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>存档
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="http://download.zhangzj.com/" title="Data download.">
+			  <i class="fa fa-download"></i>下载
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="https://exmail.qq.com/login" title="Mail service.">
+			  <i class="fa fa-envelope-o"></i>邮箱
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="http://hy.zhangzj.com/" title="Pages for huiying.">
+			  <i class="fa fa-heart"></i>专栏
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>关于
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <!-- post -->
+
+
+<!-- _partial/article -->
+
+<!-- _partial/post/title -->
+<div class="panel-heading">
+
+	
+  <!-- display as page -->
+		<div class="page-header">
+			<h1> HTTP状态码</h1>
+		</div>
+	
+
+</div>
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+	
+
+	<!-- content -->
+	<div class="mypage">
+	    <p>1xx - 信息提示 </p>
+<p>这些状态代码表示临时的响应。客户端在收到常规响应之前，应准备接收一个或多个 1xx 响应。 </p>
+<ul>
+<li>100 - Continue 初始的请求已经接受，客户应当继续发送请求的其余部分。（HTTP 1.1新） </li>
+<li>101 - Switching Protocols 服务器将遵从客户的请求转换到另外一种协议（HTTP 1.1新） </li>
+</ul>
+<p>2xx - 成功 </p>
+<p>这类状态代码表明服务器成功地接受了客户端请求。 </p>
+<ul>
+<li>200 - OK 一切正常，对GET和POST请求的应答文档跟在后面。 </li>
+<li>201 - Created 服务器已经创建了文档，Location头给出了它的URL。 </li>
+<li>202 - Accepted 已经接受请求，但处理尚未完成。 </li>
+<li>203 - Non-Authoritative Information 文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝，非权威性信息（HTTP 1.1新）。 </li>
+<li>204 - No Content 没有新文档，浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的。 </li>
+<li>205 - Reset Content 没有新的内容，但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容（HTTP 1.1新）。 </li>
+<li>206 - Partial Content 客户发送了一个带有Range头的GET请求，服务器完成了它（HTTP 1.1新）。 <a id="more"></a>
+</li>
+</ul>
+<p>3xx - 重定向 </p>
+<p>客户端浏览器必须采取更多操作来实现请求。例如，浏览器可能不得不请求服务器上的不同的页面，或通过代理服务器重复该请求。 </p>
+<ul>
+<li>300 - Multiple Choices 客户请求的文档可以在多个位置找到，这些位置已经在返回的文档内列出。如果服务器要提出优先选择，则应该在Location应答头指明。 </li>
+<li>301 - Moved Permanently 客户请求的文档在其他地方，新的URL在Location头中给出，浏览器应该自动地访问新的URL。 </li>
+<li>302 - Found 类似于301，但新的URL应该被视为临时性的替代，而不是永久性的。注意，在HTTP1.0中对应的状态信息是“Moved Temporatily”。出现该状态代码时，浏览器能够自动访问新的URL，因此它是一个很有用的状态代码。注意这个状态代码有时候可以和301替换使用。例如，如果浏览器错误地请求 <a href="http://host/~user" target="_blank" rel="external">http://host/~user</a> （缺少了后面的斜杠），有的服务器返回301，有的则返回302。严格地说，我们只能假定只有当原来的请求是GET时浏览器才会自动重定向。请参见307。 </li>
+<li>303 - See Other 类似于301/302，不同之处在于，如果原来的请求是POST，Location头指定的重定向目标文档应该通过GET提取（HTTP 1.1新）。 </li>
+<li>304 - Not Modified 客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文档还可以继续使用。 </li>
+<li>305 - Use Proxy 客户请求的文档应该通过Location头所指明的代理服务器提取（HTTP 1.1新）。 </li>
+<li>307 - Temporary Redirect 和302（Found）相同。许多浏览器会错误地响应302应答进行重定向，即使原来的请求是POST，即使它实际上只能在POST请求的应答是303时才能重定向。由于这个原因，HTTP 1.1新增了307，以便更加清除地区分几个状态代码：当出现303应答时，浏览器可以跟随重定向的GET和POST请求；如果是307应答，则浏览器只能跟随对GET请求的重定向。（HTTP 1.1新） </li>
+</ul>
+<p>4xx - 客户端错误 </p>
+<p>发生错误，客户端似乎有问题。例如，客户端请求不存在的页面，客户端未提供有效的身份验证信息。 </p>
+<ul>
+<li><p>400 - Bad Request 请求出现语法错误。 </p>
+</li>
+<li><p>401 - Unauthorized 访问被拒绝，客户试图未经授权访问受密码保护的页面。应答中会包含一个WWW-Authenticate头，浏览器据此显示用户名字/密码对话框，然后在填写合适的Authorization头后再次发出请求。IIS 定义了许多不同的 401 错误，它们指明更为具体的错误原因。这些具体的错误代码在浏览器中显示，但不在 IIS 日志中显示：<br>　· 401.1 - 登录失败。<br>　· 401.2 - 服务器配置导致登录失败。<br>　· 401.3 - 由于 ACL 对资源的限制而未获得授权。<br>　· 401.4 - 筛选器授权失败。<br>　· 401.5 - ISAPI/CGI 应用程序授权失败。<br>　· 401.7 – 访问被 Web 服务器上的 URL 授权策略拒绝。这个错误代码为 IIS 6.0 所专用。 </p>
+</li>
+<li><p>403 - Forbidden 资源不可用。服务器理解客户的请求，但拒绝处理它。通常由于服务器上文件或目录的权限设置导致。禁止访问：IIS 定义了许多不同的 403 错误，它们指明更为具体的错误原因：<br>　· 403.1 - 执行访问被禁止。<br>　· 403.2 - 读访问被禁止。<br>　· 403.3 - 写访问被禁止。<br>　· 403.4 - 要求 SSL。<br>　· 403.5 - 要求 SSL 128。<br>　· 403.6 - IP 地址被拒绝。<br>　· 403.7 - 要求客户端证书。<br>　· 403.8 - 站点访问被拒绝。<br>　· 403.9 - 用户数过多。<br>　· 403.10 - 配置无效。<br>　· 403.11 - 密码更改。<br>　· 403.12 - 拒绝访问映射表。<br>　· 403.13 - 客户端证书被吊销。<br>　· 403.14 - 拒绝目录列表。<br>　· 403.15 - 超出客户端访问许可。<br>　· 403.16 - 客户端证书不受信任或无效。<br>　· 403.17 - 客户端证书已过期或尚未生效。<br>　· 403.18 - 在当前的应用程序池中不能执行所请求的 URL。这个错误代码为 IIS 6.0 所专用。<br>　· 403.19 - 不能为这个应用程序池中的客户端执行 CGI。这个错误代码为 IIS 6.0 所专用。<br>　· 403.20 - Passport 登录失败。这个错误代码为 IIS 6.0 所专用。 </p>
+</li>
+<li><p>404 - Not Found 无法找到指定位置的资源。这也是一个常用的应答。<br>　· 404.0 -（无） – 没有找到文件或目录。<br>　· 404.1 - 无法在所请求的端口上访问 Web 站点。<br>　· 404.2 - Web 服务扩展锁定策略阻止本请求。<br>　· 404.3 - MIME 映射策略阻止本请求。 </p>
+</li>
+<li><p>405 - Method Not Allowed 请求方法（GET、POST、HEAD、Delete、PUT、TRACE等）对指定的资源不适用，用来访问本页面的 HTTP 谓词不被允许（方法不被允许）（HTTP 1.1新） </p>
+</li>
+<li>406 - Not Acceptable 指定的资源已经找到，但它的MIME类型和客户在Accpet头中所指定的不兼容，客户端浏览器不接受所请求页面的 MIME 类型（HTTP 1.1新）。 </li>
+<li>407 - Proxy Authentication Required 要求进行代理身份验证，类似于401，表示客户必须先经过代理服务器的授权。（HTTP 1.1新） </li>
+<li>408 - Request Timeout 在服务器许可的等待时间内，客户一直没有发出任何请求。客户可以在以后重复同一请求。（HTTP 1.1新） </li>
+<li>409 - Conflict 通常和PUT请求有关。由于请求和资源的当前状态相冲突，因此请求不能成功。（HTTP 1.1新） </li>
+<li>410 - Gone 所请求的文档已经不再可用，而且服务器不知道应该重定向到哪一个地址。它和404的不同在于，返回407表示文档永久地离开了指定的位置，而404表示由于未知的原因文档不可用。（HTTP 1.1新） </li>
+<li>411 - Length Required 服务器不能处理请求，除非客户发送一个Content-Length头。（HTTP 1.1新） </li>
+<li>412 - Precondition Failed 请求头中指定的一些前提条件失败（HTTP 1.1新）。 </li>
+<li>413 – Request Entity Too Large 目标文档的大小超过服务器当前愿意处理的大小。如果服务器认为自己能够稍后再处理该请求，则应该提供一个Retry-After头（HTTP 1.1新）。 </li>
+<li>414 - Request URI Too Long URI太长（HTTP 1.1新）。 </li>
+<li>415 – 不支持的媒体类型。 </li>
+<li>416 – Requested Range Not Satisfiable 服务器不能满足客户在请求中指定的Range头。（HTTP 1.1新） </li>
+<li>417 – 执行失败。 </li>
+<li>423 – 锁定的错误。 </li>
+</ul>
+<p>5xx - 服务器错误 </p>
+<p>服务器由于遇到错误而不能完成该请求。 </p>
+<ul>
+<li><p>500 - Internal Server Error 服务器遇到了意料不到的情况，不能完成客户的请求。<br>　· 500.12 - 应用程序正忙于在 Web 服务器上重新启动。<br>　· 500.13 - Web 服务器太忙。<br>　· 500.15 - 不允许直接请求 Global.asa。<br>　· 500.16 – UNC 授权凭据不正确。这个错误代码为 IIS 6.0 所专用。<br>　· 500.18 – URL 授权存储不能打开。这个错误代码为 IIS 6.0 所专用。<br>　· 500.100 - 内部 ASP 错误。 </p>
+</li>
+<li><p>501 - Not Implemented 服务器不支持实现请求所需要的功能，页眉值指定了未实现的配置。例如，客户发出了一个服务器不支持的PUT请求。 </p>
+</li>
+<li><p>502 - Bad Gateway 服务器作为网关或者代理时，为了完成请求访问下一个服务器，但该服务器返回了非法的应答。 亦说Web 服务器用作网关或代理服务器时收到了无效响应。<br>　· 502.1 - CGI 应用程序超时。<br>　· 502.2 - CGI 应用程序出错。 </p>
+</li>
+<li><p>503 - Service Unavailable 服务不可用，服务器由于维护或者负载过重未能应答。例如，Servlet可能在数据库连接池已满的情况下返回503。服务器返回503时可以提供一个 Retry-After头。这个错误代码为 IIS 6.0 所专用。 </p>
+</li>
+<li><p>504 - Gateway Timeout 网关超时，由作为代理或网关的服务器使用，表示不能及时地从远程服务器获得应答。（HTTP 1.1新） 。 </p>
+</li>
+<li><p>505 - HTTP Version Not Supported 服务器不支持请求中所指明的HTTP版本。（HTTP 1.1新）。</p>
+</li>
+</ul>
+
+	</div>
+
+	<div>
+  	<center>
+	<!-- _partial/post/pagination -->
+<div class="pagination">
+<ul class="pagination">
+	 
+		
+    	<li class="prev"><a href="/2015/03/19/change-notebook-315/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="//"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2015/02/20/high-performance-css3-animation/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+	<!-- comment -->
+	<!-- _partial/post/comment -->
+
+
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrsDVJnc',
+    conf = 'prod_c8539201390e5a8426def87503b533cc';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>                
+
+  
+</section>
+
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+
+	
+		<!-- _partial/post/meta -->
+<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Feb 20 2015
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+        <!-- _partial/post/category -->
+  
+  <li>
+    <li><a href="/categories/工具箱/">工具箱<span>2</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+    <ul id="tags" class="tag_box list-unstyled collapse in">
+	    <!-- _partial/post/tag -->
+  
+  <li><a href="/tags/HTTP状态码/">HTTP状态码<span>1</span></a></li> <li><a href="/tags/工具箱/">工具箱<span>2</span></a></li>
+
+    </ul>
+	</div>
+	
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+
+    <hr>
+
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+
+	  </div>
+    <footer> <!-- _partial/footer -->
+<p class="pull-left">
+  &copy; 2014-2015 by <a class="text-default" href="mailto:zzj@zhangzj.com" target="_blank">张子杰</a>
+  &nbsp;
+  <span class="text-muted">Powered by
+	<a class="text-muted" href="http://github.com/" target="_blank">Github</a>,
+    <a class="text-muted" href="http://zespia.tw/hexo/" target="_blank">Hexo</a>&nbsp;
+	Theme modify from
+    <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/">Freewill</a>
+  </span>&nbsp;
+  <span class="text-muted">
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254021177'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254021177' type='text/javascript'%3E%3C/script%3E"));</script>
+  </span>
+</p>
+<div class="pull-right">
+  <ul class="inline list-inline foot-icon">
+	<li><a href="http://zhanzhang.anquan.org/physical/report/?domain=www.zhangzj.com" name="JhJfuNBAoEYAOhT9DbfQJWhPaaoDeqUxzW4ALCGV9emI8OgImk" target="_blank"><img height="47" src="http://zhanzhang.anquan.org/static/common/images/zhanzhang.png" alt="安全联盟站长平台" /></a></li>
+    <li><a href="http://webscan.360.cn/index/checkwebsite/url/zhangzj.com" target="_blank"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/295fd5933a27ae2eec30a188d85ad61a"/></a></li>
+	<li><script type="text/javascript">     var locationUrl = escape(document.location.href);     document.write(unescape("%3Cscript")+" charset='utf-8' src='http://union.rising.com.cn//InfoManage/TrojanInspect.aspx?p1=n2NcF96gOLA9Z58CaYNN8usYQwa-iyk8WU3Ux-UBl-w=&p2=PeqIkh03xcY=&p3=n2NcF96gOLA9Z58CaYNN8nWyBHKenNUM&url="+ locationUrl  + "' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script></li>
+  </ul>
+</div> </footer>
+  </div> <!-- container-narrow -->
+  <!-- _partial/after_footer -->
+<a id="gotop" href="#">
+  <span>▲</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body></html>

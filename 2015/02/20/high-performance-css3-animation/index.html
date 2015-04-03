@@ -1,0 +1,348 @@
+<!DOCTYPE HTML><!-- _partial/head -->
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>(转)高性能 CSS3 动画 | 张子杰的博客</title>
+  <meta name="author" content="张子杰">
+  
+  <meta name="description" content="欢迎来到张子杰的个人网站，一个托管于github的博客。">
+  
+  <meta name="keywords" content="张子杰,博客">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="(转)高性能 CSS3 动画"/>
+  <meta property="og:site_name" content="张子杰的博客"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/true" title="张子杰的博客" type="application/atom+xml">
+  
+  
+	<link href="/favicon.ico" rel="icon" type="image/x-ico">
+  
+  
+  <link rel="stylesheet" href="/css/index.css" media="screen" tyep="text/css">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.cerulean.min.css" media="screen" type="text/css">
+  
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+  
+  <!-- analytics -->
+  <!-- _partial/post/google_analytics -->
+
+
+  <meta name="baidu-site-verification" content="CLJNal3Osm" />
+  <meta name="sogou_site_verification" content="vIsarwofbh"/>
+  <meta name="msvalidate.01" content="C14C91E65E6A27FD03D26391E29BB2E7" />
+  <meta name="shenma-site-verification" content="9371bdccb3b7d9f3b700285b0271b069" />
+  <meta name="google-site-verification" content="na-P7V2fYBnMhXbCm0c55oRF5ETB5rxDJnAI10SBVis" />
+  <script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?173d7ff2c96464fcd08f3e1baafd4f12";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+
+</head>
+
+ <body>
+ <a href="https://github.com/zhangzijie"><img style="position: absolute; top: 0; right: 0; border: 0; margin:0; z-index:9999;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+ <!-- _partial/navigation -->
+<nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">张子杰的博客</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/" title="Home Page.">
+			  <i class="fa fa-home"></i>首页
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>存档
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="http://download.zhangzj.com/" title="Data download.">
+			  <i class="fa fa-download"></i>下载
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="https://exmail.qq.com/login" title="Mail service.">
+			  <i class="fa fa-envelope-o"></i>邮箱
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="http://hy.zhangzj.com/" title="Pages for huiying.">
+			  <i class="fa fa-heart"></i>专栏
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>关于
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <!-- post -->
+
+
+<!-- _partial/article -->
+
+<!-- _partial/post/title -->
+<div class="panel-heading">
+
+	
+  <!-- display as page -->
+		<div class="page-header">
+			<h1> (转)高性能 CSS3 动画</h1>
+		</div>
+	
+
+</div>
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+	
+
+	<!-- content -->
+	<div class="mypage">
+	    <p>高性能移动Web相较PC的场景需要考虑的因素也相对更多更复杂，我们总结为以下几点： 流量、功耗与流畅度。<br>在PC时代我们更多的是考虑体验上的流畅度，而在Mobile端本身丰富的场景下，需要额外关注对用户基站网络流量使用的情况，设备耗电量的情况。</p>
+<p>关于流畅度，主要体现在前端动画中，在现有的前端动画体系中，通常有两种模式：JS动画与CSS3动画。<br>JS动画是通过JS动态改写样式实现动画能力的一种方案，在PC端兼容低端浏览器中不失为一种推荐方案。<br>而在移动端，我们选择性能更优浏览器原生实现方案：CSS3动画。</p>
+<p>然而，CSS3动画在移动多终端设备场景下，相比PC会面对更多的性能问题，主要体现在动画的卡顿与闪烁。</p>
+<p>目前对提升移动端CSS3动画体验的主要方法有几点：<br><a id="more"></a></p>
+<h5 id="尽可能多的利用硬件能力，如使用3D变形来开启GPU加速">尽可能多的利用硬件能力，如使用3D变形来开启GPU加速</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">-webkit-transform</span>: <span class="tag">translate3d</span>(0, 0, 0);</span><br><span class="line"><span class="tag">-moz-transform</span>: <span class="tag">translate3d</span>(0, 0, 0);</span><br><span class="line"><span class="tag">-ms-transform</span>: <span class="tag">translate3d</span>(0, 0, 0);</span><br><span class="line"><span class="tag">transform</span>: <span class="tag">translate3d</span>(0, 0, 0);</span><br></pre></td></tr></table></figure>
+<p>如动画过程有闪烁（通常发生在动画开始的时候），可以尝试下面的Hack：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">-webkit-backface-visibility</span>: <span class="tag">hidden</span>;</span><br><span class="line"><span class="tag">-moz-backface-visibility</span>: <span class="tag">hidden</span>;</span><br><span class="line"><span class="tag">-ms-backface-visibility</span>: <span class="tag">hidden</span>;</span><br><span class="line"><span class="tag">backface-visibility</span>: <span class="tag">hidden</span>;</span><br><span class="line"></span><br><span class="line"><span class="tag">-webkit-perspective</span>: 1000;</span><br><span class="line"><span class="tag">-moz-perspective</span>: 1000;</span><br><span class="line"><span class="tag">-ms-perspective</span>: 1000;</span><br><span class="line"><span class="tag">perspective</span>: 1000;</span><br></pre></td></tr></table></figure>
+<p>如下面一个元素通过<code>translate3d</code>右移<code>500px</code>的动画流畅度会明显优于使用<code>left</code>属性：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#ball-1</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> -webkit-transform .<span class="number">5s</span> ease</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">translate3d</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"><span class="id">#ball-1</span><span class="class">.slidein</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-transform</span>:<span class="value"> <span class="function">translate3d</span>(<span class="number">500px</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="id">#ball-2</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> left .<span class="number">5s</span> ease</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"><span class="id">#ball-2</span><span class="class">.slidein</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">500px</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>注：3D变形会消耗更多的内存与功耗，应确实有性能问题时才去使用它，兼在权衡</p>
+<h5 id="尽可能少的使用box-shadows与gradients">尽可能少的使用<code>box-shadows</code>与<code>gradients</code></h5><p><code>box-shadows</code>与<code>gradients</code>往往都是页面的性能杀手，尤其是在一个元素同时都使用了它们，所以拥抱扁平化设计吧。</p>
+<h5 id="尽可能的让动画元素不在文档流中，以减少重排">尽可能的让动画元素不在文档流中，以减少重排</h5><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">position</span>: <span class="string">fixed;</span></span><br><span class="line"><span class="attribute">position</span>: <span class="string">absolute;</span></span><br></pre></td></tr></table></figure>
+<h5 id="优化_DOM_layout_性能">优化 DOM layout 性能</h5><p>我们从实例开始描述这个主题：</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>;</span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>;</span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>;</span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>;</span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>;</span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>;</span><br></pre></td></tr></table></figure>
+<p>这是两段能力上完全等同的代码，显式的差异正如我们所见，只有执行顺序的区别。但真是如此吗？下面是加了说明注释的代码版本，很好的阐述了其中的进一步差异：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 触发两次 layout</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>;   <span class="comment">// Read</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>;     <span class="comment">// Write</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// Read</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>;   <span class="comment">// Write</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 只触发一次 layout</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>;   <span class="comment">// Read</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// Read</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>;     <span class="comment">// Write</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>;   <span class="comment">// Write</span></span><br></pre></td></tr></table></figure>
+<p>从注释中可找到规律，连续的读取offsetWidth/Height属性与连续的设置width/height属性，相比分别读取设置单个属性可少触发一次layout。</p>
+<p>从结论看似乎与执行队列有关，没错，这是浏览器的优化策略。所有可触发layout的操作都会被暂时放入 <code>layout-queue</code> 中，等到必须更新的时候，再计算整个队列中所有操作影响的结果，如此就可只进行一次的layout，从而提升性能。</p>
+<p>关键一，可触发<code>layout</code>的操作，哪些操作下会layout的更新（也称为<code>reflow</code>或者<code>relayout</code>）？</p>
+<p>我们从浏览器的源码实现入手，以开源<a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/" target="_blank" rel="external">Webkit/Blink</a>为例，<br>对layout的更新，Webkit 主要通过 <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/dom/Document.cpp&amp;q=updateLayout%20package:%5Echromium$%20file:%5Esrc/third_party/WebKit/Source/core/&amp;dr=CSs&amp;l=1715" target="_blank" rel="external">Document::updateLayout</a><br>与 <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/dom/Document.cpp&amp;q=updateLayout%20package:%5Echromium$%20file:%5Esrc/third_party/WebKit/Source/core/&amp;dr=CSs&amp;l=1750" target="_blank" rel="external">Document::updateLayoutIgnorePendingStylesheets</a><br>两个方法：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> Document::updateLayout()</span><br><span class="line">&#123;</span><br><span class="line">    ASSERT(isMainThread());</span><br><span class="line"></span><br><span class="line">    FrameView* frameView = view();</span><br><span class="line">    <span class="keyword">if</span> (frameView &amp;&amp; frameView-&gt;isInLayout()) &#123;</span><br><span class="line">        ASSERT_NOT_REACHED();</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (Element* oe = ownerElement())</span><br><span class="line">        oe-&gt;document()-&gt;updateLayout();</span><br><span class="line"></span><br><span class="line">    updateStyleIfNeeded();</span><br><span class="line"></span><br><span class="line">    StackStats::LayoutCheckPoint layoutCheckPoint;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (frameView &amp;&amp; renderer() &amp;&amp; (frameView-&gt;layoutPending() || renderer()-&gt;needsLayout()))</span><br><span class="line">        frameView-&gt;layout();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (m_focusedNode &amp;&amp; !m_didPostCheckFocusedNodeTask) &#123;</span><br><span class="line">        postTask(CheckFocusedNodeTask::create());</span><br><span class="line">        m_didPostCheckFocusedNodeTask = <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> Document::updateLayoutIgnorePendingStylesheets()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">bool</span> oldIgnore = m_ignorePendingStylesheets;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!haveStylesheetsLoaded()) &#123;</span><br><span class="line">        m_ignorePendingStylesheets = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        HTMLElement* bodyElement = body();</span><br><span class="line">        <span class="keyword">if</span> (bodyElement &amp;&amp; !bodyElement-&gt;renderer() &amp;&amp; m_pendingSheetLayout == NoLayoutWithPendingSheets) &#123;</span><br><span class="line">            m_pendingSheetLayout = DidLayoutWithPendingSheets;</span><br><span class="line">            styleResolverChanged(RecalcStyleImmediately);</span><br><span class="line">        &#125; <span class="function"><span class="keyword">else</span> <span class="title">if</span> <span class="params">(m_hasNodesWithPlaceholderStyle)</span></span><br><span class="line">            <span class="title">recalcStyle</span><span class="params">(Force)</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    updateLayout();</span><br><span class="line"></span><br><span class="line">    m_ignorePendingStylesheets = oldIgnore;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>从 <code>updateLayoutIgnorePendingStylesheets</code> 方法的内部实现可知，其也是对 <code>updateLayout</code> 方法的扩展，并且在现有的 layout 更新模式中，大部分场景都是调用 updateLayoutIgnorePendingStylesheets 来进行layout的更新。</p>
+<p>搜索 Webkit 实现中调用 <a href="https://code.google.com/p/chromium/codesearch#search/&amp;q=updateLayoutIgnorePendingStylesheets&amp;sq=package:chromium&amp;type=cs" target="_blank" rel="external">updateLayoutIgnorePendingStylesheets</a> 方法的代码,<br>得到以下可导致触发 layout 的操作：</p>
+<ul>
+<li><p><code>Element</code>:<br>clientHeight, clientLeft, clientTop, clientWidth, focus(), getBoundingClientRect(), getClientRects(), innerText, offsetHeight, offsetLeft, offsetParent, offsetTop, offsetWidth, outerText, scrollByLines(), scrollByPages(), scrollHeight, scrollIntoView(), scrollIntoViewIfNeeded(), scrollLeft, scrollTop, scrollWidth</p>
+</li>
+<li><p><code>Frame, HTMLImageElement</code>:<br>height, width</p>
+</li>
+<li><p><code>Range</code>:<br>getBoundingClientRect(), getClientRects()</p>
+</li>
+<li><p><code>SVGLocatable</code>:<br>computeCTM(), getBBox()</p>
+</li>
+<li><p><code>SVGTextContent</code>:<br>getCharNumAtPosition(), getComputedTextLength(), getEndPositionOfChar(), getExtentOfChar(), getNumberOfChars(), getRotationOfChar(), getStartPositionOfChar(), getSubStringLength(), selectSubString()</p>
+</li>
+<li><p><code>SVGUse</code>:<br>instanceRoot</p>
+</li>
+<li><p><code>window</code>:<br>getComputedStyle(), scrollBy(), scrollTo(), scrollX, scrollY, webkitConvertPointFromNodeToPage(), webkitConvertPointFromPageToNode()</p>
+</li>
+</ul>
+<p>进一步深入Layout，那上文中必须更新的必要条件是什么？<br>在 Stoyan Stefanov 的 <a href="http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/" target="_blank" rel="external">Rendering: repaint, reflow/relayout, restyle</a> 一文中已做比较详细的解答，可移步了解~</p>
+<h5 id="相关阅读">相关阅读</h5><ul>
+<li><a href="http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/" target="_blank" rel="external">Rendering: repaint, reflow/relayout, restyle</a></li>
+<li><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html" target="_blank" rel="external">How (not) to trigger a layout in WebKit</a></li>
+</ul>
+<p>原文链接：<a href="https://github.com/AlloyTeam/Mars/blob/master/performance/high-performance-css3-animation.md" target="_blank" rel="external">高性能 CSS3 动画</a></p>
+
+	</div>
+
+	<div>
+  	<center>
+	<!-- _partial/post/pagination -->
+<div class="pagination">
+<ul class="pagination">
+	 
+		
+    	<li class="prev"><a href="/2015/02/20/http-status-code/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="//"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2015/02/14/css3-3d-cube/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+	<!-- comment -->
+	<!-- _partial/post/comment -->
+
+
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrsDVJnc',
+    conf = 'prod_c8539201390e5a8426def87503b533cc';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>                
+
+  
+</section>
+
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+
+	
+		<!-- _partial/post/meta -->
+<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Feb 20 2015
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+        <!-- _partial/post/category -->
+  
+  <li>
+    <li><a href="/categories/转载/">转载<span>2</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+    <ul id="tags" class="tag_box list-unstyled collapse in">
+	    <!-- _partial/post/tag -->
+  
+  <li><a href="/tags/CSS/">CSS<span>3</span></a></li> <li><a href="/tags/动画/">动画<span>2</span></a></li> <li><a href="/tags/转载/">转载<span>2</span></a></li>
+
+    </ul>
+	</div>
+	
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+
+    <hr>
+
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+
+	  </div>
+    <footer> <!-- _partial/footer -->
+<p class="pull-left">
+  &copy; 2014-2015 by <a class="text-default" href="mailto:zzj@zhangzj.com" target="_blank">张子杰</a>
+  &nbsp;
+  <span class="text-muted">Powered by
+	<a class="text-muted" href="http://github.com/" target="_blank">Github</a>,
+    <a class="text-muted" href="http://zespia.tw/hexo/" target="_blank">Hexo</a>&nbsp;
+	Theme modify from
+    <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/">Freewill</a>
+  </span>&nbsp;
+  <span class="text-muted">
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254021177'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254021177' type='text/javascript'%3E%3C/script%3E"));</script>
+  </span>
+</p>
+<div class="pull-right">
+  <ul class="inline list-inline foot-icon">
+	<li><a href="http://zhanzhang.anquan.org/physical/report/?domain=www.zhangzj.com" name="JhJfuNBAoEYAOhT9DbfQJWhPaaoDeqUxzW4ALCGV9emI8OgImk" target="_blank"><img height="47" src="http://zhanzhang.anquan.org/static/common/images/zhanzhang.png" alt="安全联盟站长平台" /></a></li>
+    <li><a href="http://webscan.360.cn/index/checkwebsite/url/zhangzj.com" target="_blank"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/295fd5933a27ae2eec30a188d85ad61a"/></a></li>
+	<li><script type="text/javascript">     var locationUrl = escape(document.location.href);     document.write(unescape("%3Cscript")+" charset='utf-8' src='http://union.rising.com.cn//InfoManage/TrojanInspect.aspx?p1=n2NcF96gOLA9Z58CaYNN8usYQwa-iyk8WU3Ux-UBl-w=&p2=PeqIkh03xcY=&p3=n2NcF96gOLA9Z58CaYNN8nWyBHKenNUM&url="+ locationUrl  + "' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script></li>
+  </ul>
+</div> </footer>
+  </div> <!-- container-narrow -->
+  <!-- _partial/after_footer -->
+<a id="gotop" href="#">
+  <span>▲</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body></html>
