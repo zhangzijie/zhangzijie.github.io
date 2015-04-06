@@ -6,9 +6,11 @@
   <title>张子杰的博客</title>
   <meta name="author" content="张子杰">
   
-  <meta name="description" content="欢迎来到张子杰的个人网站，一个托管于github的博客。">
+  <meta name="description" content="欢迎来到张子杰的Github博客。">
+  
   
   <meta name="keywords" content="张子杰,博客">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
@@ -59,7 +61,6 @@
 </head>
 
  <body>
- <a href="https://github.com/zhangzijie"><img style="position: absolute; top: 0; right: 0; border: 0; margin:0; z-index:9999;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
  <!-- _partial/navigation -->
 <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -120,9 +121,9 @@
   	<div class="content">
     	 <!-- index -->
 <div class="jumbotron page-header bg-primary">
-  <div class="col-md-2"><img src="/img/logo.png" alt="LOGO"></div>
-  <h2>欢迎来到张子杰的博客</h2><br>
-  <h4>计划-实施-反省  决心-毅力</h4>
+  <div class="col-md-3"><img src="/img/logo.png" alt="LOGO"></div>
+  <h3>欢迎来到张子杰的博客</h3><br>
+  <h4>Plan--Do--Check--Act</h4>
 </div>
 
 <!-- _partial/index -->
@@ -138,6 +139,38 @@
 
 			<!-- title and entry -->
 			<div class="panel panel-default">
+				
+					<!-- _partial/post/title -->
+<div class="panel-heading">
+
+	
+	<!-- display as entry -->
+		<h3 class="xtitle">
+			<a href="/2015/04/06/javaee-13-core-tech/" >Java EE的13种核心技术</a>
+			<span class="text-muted pull-right"><small> Apr 6 2015 </small></span>
+		</h3>
+	
+
+</div>
+
+					<!-- _partial/post/entry -->
+<div class="panel-body">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <p><img src="/img/javaee-13-core-tech.jpg" alt="Java EE的13种核心技术"></p>
+<p>一、JDBC(Java Database Connectivity)<br>　　JDBC API为访问不同的数据库提供了一种统一的途径，象ODBC一样，JDBC对开发者屏蔽了一些细节问题，另外，JDBC对数据库的访问也具有平台无关性。</p>
+<p>二、JNDI(Java Name and Directory Interface)<br>　　JNDI API被用于执行名字和目录服务。它提供了一致的模型来存取和操作企业级的资源如DNS和LDAP，本地文件系统，或应用服务器中的对象。</p>
+	
+	</div>
+	
+
+</div>
+	<a type="button" href="/2015/04/06/javaee-13-core-tech/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
 				
 					<!-- _partial/post/title -->
 <div class="panel-heading">
@@ -289,39 +322,6 @@
 </div>
 
 				
-					<!-- _partial/post/title -->
-<div class="panel-heading">
-
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/2015/02/14/css3-3d-cube/" >CSS3编写3D立方体动画</a>
-			<span class="text-muted pull-right"><small> Feb 14 2015 </small></span>
-		</h3>
-	
-
-</div>
-
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>20行CSS3代码即可构建一个三维立方体以及它旋转的动画。</p>
-<p>先说CSS3的几个知识点：<br>1.transform<br>transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。详见：<a href="http://www.w3school.com.cn/css3/css3_3dtransform.asp">W3School 3D转换</a></p>
-<p>2.@keyframes<br>@keyframes 规则用于创建动画。在 @keyframes 中规定某项 CSS 样式，就能创建由当前样式逐渐改为新样式的动画效果。详见：<a href="http://www.w3school.com.cn/css3/css3_animation.asp">W3School 3D动画</a></p>
-<p>了解了这两个知识点下的相关的属性后，在技术上已经学完了。剩下关键的就是创建立方体的思路了。<br>立方体通过包含6个li标签的一个ul来承载，一个li代表立方体的一面，前四个li代表立方体的前面，上面，后面和下面，第5、6个li代表立方体的左面和右面。<br>建立右手空间直角坐标系，第1个li于不用旋转，平面延Z轴正方向平移至前面；第2个li延X轴正方向顺时针旋转90度，<strong>整个坐标系跟随旋转90度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至上面；第3、4个li是同理的，第3个li延X轴正方向顺时针旋转180度，<strong>整个坐标系跟随旋转180度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至后面；第4个li延X轴正方向顺时针旋转270度，<strong>整个坐标系跟随旋转270度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至下面；第5个li延Y轴正方形顺时针旋转90度，<strong>整个坐标系跟随旋转90度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至左面；第6个li延Y轴正方形顺时针旋转270度，<strong>整个坐标系跟随旋转270度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至右面。那么立方体就构建完成了。<br>立方体构建出来之后，可以通过分别延X轴和Y轴旋转360度实现立方体旋转展示的动画了。<br>
-	
-	</div>
-	
-
-</div>
-	<a type="button" href="/2015/02/14/css3-3d-cube/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-				
 
 			</div>
 
@@ -386,7 +386,7 @@
 		
 			<li><a href="/categories/前端/">前端<span>2</span></a></li>
 		
-			<li><a href="/categories/工具箱/">工具箱<span>2</span></a></li>
+			<li><a href="/categories/工具箱/">工具箱<span>3</span></a></li>
 		
 			<li><a href="/categories/开发工具/">开发工具<span>1</span></a></li>
 		
@@ -407,47 +407,51 @@
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/HTTP状态码/">HTTP状态码</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">4&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">4&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/MVC/">MVC</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
 		
+			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
+		
 			<li><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">2&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
 		
 		</ul>
 	</div>
@@ -459,6 +463,10 @@
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2015/04/06/javaee-13-core-tech/" ><i class="fa fa-file-o"></i>Java EE的13种核心技术...</a>
+      </li>
     
       <li>
         <a href="/2015/04/06/notice-tmp/" ><i class="fa fa-file-o"></i>关于收到多封验证Apple ID邮件的公告...</a>
@@ -474,10 +482,6 @@
     
       <li>
         <a href="/2015/02/20/high-performance-css3-animation/" ><i class="fa fa-file-o"></i>(转)高性能 CSS3 动画...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/14/css3-3d-cube/" ><i class="fa fa-file-o"></i>CSS3编写3D立方体动画...</a>
       </li>
     
   </ul>
@@ -524,7 +528,7 @@
 <div class="pull-right">
   <ul class="inline list-inline foot-icon">
 	<li><a href="http://zhanzhang.anquan.org/physical/report/?domain=www.zhangzj.com" name="JhJfuNBAoEYAOhT9DbfQJWhPaaoDeqUxzW4ALCGV9emI8OgImk" target="_blank"><img height="47" src="http://zhanzhang.anquan.org/static/common/images/zhanzhang.png" alt="安全联盟站长平台" /></a></li>
-    <li><a href="http://webscan.360.cn/index/checkwebsite/url/zhangzj.com" target="_blank"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/295fd5933a27ae2eec30a188d85ad61a"/></a></li>
+    <li><a href="http://webscan.360.cn/index/checkwebsite/url/zhangzj.com" target="_blank"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/295fd5933a27ae2eec30a188d85ad61a" alt="360网站安全检测"/></a></li>
 	<li><script type="text/javascript">     var locationUrl = escape(document.location.href);     document.write(unescape("%3Cscript")+" charset='utf-8' src='http://union.rising.com.cn//InfoManage/TrojanInspect.aspx?p1=n2NcF96gOLA9Z58CaYNN8usYQwa-iyk8WU3Ux-UBl-w=&p2=PeqIkh03xcY=&p3=n2NcF96gOLA9Z58CaYNN8nWyBHKenNUM&url="+ locationUrl  + "' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script></li>
   </ul>
 </div> </footer>
