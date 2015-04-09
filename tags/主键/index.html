@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>核心技术 | 张子杰的博客</title>
+  <title>主键 | 张子杰的博客</title>
   <meta name="author" content="张子杰">
   
   <meta name="description" content="欢迎来到张子杰的Github博客。">
@@ -125,7 +125,7 @@
 
 <!-- archive.title -->
 <div class="page-header">
-  <h1 class="archive-title-tag archive-title-核心技术">核心技术</h1>
+  <h1 class="archive-title-tag archive-title-主键">主键</h1>
 </div>
 
 <div class="row page">
@@ -144,8 +144,8 @@
 	
 	<!-- display as entry -->
 		<h3 class="xtitle">
-			<a href="/2015/04/06/javaee-13-core-tech/" >Java EE的13种核心技术</a>
-			<span class="text-muted pull-right"><small> Apr 6 2015 </small></span>
+			<a href="/2015/04/09/principle-for-primary-key-design/" >数据表主键的设计原则</a>
+			<span class="text-muted pull-right"><small> Apr 9 2015 </small></span>
 		</h3>
 	
 
@@ -155,21 +155,20 @@
 <div class="panel-body">
   <div class="row">
   
-	<div class="col-md-8">
+	<div class="col-md-12">
+	  
 	
+	  <p>昨天跟一个没什么项目经验的同学讨论一个大作业的数据库表的设计。大作业是要模仿一个现成的系统自己做一个出来，所以建表就直接系统运行时显示有什么字段就直接加什么字段进表里，但是显示出来的字段是没有编号（ID）这一字段的。</p>
+<p>然后问题就来了，我说加一个编号（ID）吧，那个同学说，不用加啦，加来有什么用，我说用来做主键啊，同学说，用房间类型名称做主键就可以啦，（在这张表中，房间类型名称是不会出现重名的），我说，可是我没见过用名称做主键的喔，我见过的都是用ID做主键的，那个同学说，那么你说多加个编号有什么用，没用就不要加啦，我当时真的答不上来，竟无言以对。</p>
+<p>回宿舍后赶紧查了一下，因为我不想再出现明明别人是错的却被反问到答不出为什么的情况。一查才发现，原来自己的对主键的认识也不够充分。</p>
+<p>查完之后明白了一点：主键应该是对用户没有意义的！</p>
+<p>这点就充分的说明了不能用（某业务项的）名称来做主键，就算名称是不会重复，而应该用一个对用户而言没有意义的ID来做主键。</p>
 	
-	  <p>一、JDBC(Java Database Connectivity)<br>　　JDBC API为访问不同的数据库提供了一种统一的途径，象ODBC一样，JDBC对开发者屏蔽了一些细节问题，另外，JDBC对数据库的访问也具有平台无关性。</p>
-<p>二、JNDI(Java Name and Directory Interface)<br>　　JNDI API被用于执行名字和目录服务。它提供了一致的模型来存取和操作企业级的资源如DNS和LDAP，本地文件系统，或应用服务器中的对象。</p>
-	
-	</div>
-	
-	<div class="col-md-4">
-	  <div class="thumbnail"><a href="/2015/04/06/javaee-13-core-tech/"><img src="/img/javaee-13-core-tech.jpg" alt="Java EE的13种核心技术"  class="nofancybox"></a></div>
 	</div>
 	
 
 </div>
-	<a type="button" href="/2015/04/06/javaee-13-core-tech/#more" class="btn btn-default more">阅读此文</a>
+	<a type="button" href="/2015/04/09/principle-for-primary-key-design/#more" class="btn btn-default more">阅读此文</a>
 </div>
 
 	  
@@ -246,53 +245,53 @@
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">4&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">2&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/HTTP状态码/">HTTP状态码</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">2&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/主键/">主键</a><span class="tag-list-count">1&nbsp;</span></li>
 		
+			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/HTTP状态码/">HTTP状态码</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">4&nbsp;</span></li>
+		
 			<li><a class="tag-list-link" href="/tags/MVC/">MVC</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 		</ul>
 	</div>

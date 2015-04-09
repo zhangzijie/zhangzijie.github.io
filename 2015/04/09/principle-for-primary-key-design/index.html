@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>SQL语句中字符串前加N解决中文乱码 | 张子杰的博客</title>
+  <title>数据表主键的设计原则 | 张子杰的博客</title>
   <meta name="author" content="张子杰">
   
   <meta name="description" content="欢迎来到张子杰的Github博客。">
   
   
-  <meta name="keywords" content="张子杰,博客,SQL,乱码">
+  <meta name="keywords" content="张子杰,博客,数据库,主键设计原则">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="SQL语句中字符串前加N解决中文乱码"/>
+  <meta property="og:title" content="数据表主键的设计原则"/>
   <meta property="og:site_name" content="张子杰的博客"/>
 
   
@@ -130,7 +130,7 @@
 	
   <!-- display as page -->
 		<div class="page-header">
-			<h1> SQL语句中字符串前加N解决中文乱码</h1>
+			<h1> 数据表主键的设计原则</h1>
 		</div>
 	
 
@@ -147,13 +147,26 @@
 
 	<!-- content -->
 	<div class="mypage">
-	    <p>之前给Oracle数据库插入数据时，插入中文字符串后都变成乱码了。解决方法是在字符串前加大写的N。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">insert</span> <span class="keyword">into</span> tablename (ID, USERNAME) <span class="keyword">values</span> (<span class="number">168</span>, N<span class="string">'用户名'</span>);</span></span><br></pre></td></tr></table></figure></p>
-<p>加N表示字符串强制用 Unicode 方式存储。</p>
-<p>Unicode 字符串的格式与普通字符串相似，但它前面有一个 N 标识符（N 代表 SQL-92 标准中的国际语言 (National Language)）。N 前缀必须是大写字母。</p>
-<p>Unicode是双字节字符。对于西文字符，用一个字节来存储过足够了，对于东方文字字符，就需要两个字节来存储。Unicode为了统一、规范、方便、兼容，就规定西文字符也用两个字节来存储。</p>
-<p>微软也有相关的帮助文档：<a href="http://support.microsoft.com/kb/239530/zh-cn" target="_blank" rel="external">当您在 SQL Server 中的 Unicode 字符串常量处理，则必须在前面带有前缀 N 的所有 Unicode 字符串</a></p>
-<p>当然这里的解决方法除了在字符串前加N，也可以通过更改数据库的字符集来解决。</p>
-
+	    <p>昨天跟一个没什么项目经验的同学讨论一个大作业的数据库表的设计。大作业是要模仿一个现成的系统自己做一个出来，所以建表就直接系统运行时显示有什么字段就直接加什么字段进表里，但是显示出来的字段是没有编号（ID）这一字段的。</p>
+<p>然后问题就来了，我说加一个编号（ID）吧，那个同学说，不用加啦，加来有什么用，我说用来做主键啊，同学说，用房间类型名称做主键就可以啦，（在这张表中，房间类型名称是不会出现重名的），我说，可是我没见过用名称做主键的喔，我见过的都是用ID做主键的，那个同学说，那么你说多加个编号有什么用，没用就不要加啦，我当时真的答不上来，竟无言以对。</p>
+<p>回宿舍后赶紧查了一下，因为我不想再出现明明别人是错的却被反问到答不出为什么的情况。一查才发现，原来自己的对主键的认识也不够充分。</p>
+<p>查完之后明白了一点：主键应该是对用户没有意义的！</p>
+<p>这点就充分的说明了不能用（某业务项的）名称来做主键，就算名称是不会重复，而应该用一个对用户而言没有意义的ID来做主键。</p>
+<a id="more"></a>
+<p>下面摘录一段查资料时看到的博文，感觉说得挺到点的。（<a href="http://www.cnblogs.com/longyi1234/archive/2010/03/24/1693738.html" target="_blank" rel="external">原文链接</a>）</p>
+<p><strong>数据库中主键和外键的设计原则</strong></p>
+<p>主键和外键是把多个表组织为一个有效的关系数据库的粘合剂。主键和外键的设计对物理数据库的性能和可用性都有着决定性的影响。<br>必须将数据库模式从理论上的逻辑设计转换为实际的物理设计。而主键和外键的结构是这个设计过程的症结所在。一旦将所设计的数据库用于了生产环境，就很难对这些键进行修改，所以在开发阶段就设计好主键和外键就是非常必要和值得的。<br>主键：<br>  关系数据库依赖于主键—-它是数据库物理模式的基石。主键在物理层面上只有两个用途：</p>
+<pre><code><span class="bullet">1. </span>惟一地标识一行。
+<span class="bullet">2. </span>作为一个可以被外键有效引用的对象。
+</code></pre><p>  基于以上这两个用途，下面给出了我在设计物理层面的主键时所遵循的一些原则：</p>
+<pre><code> 1. 主键应当是对用户没有意义的。如果用户看到了一个表示多对多关系的连接表中的数据，并抱怨它没有什么用处，那就证明它的主键设计地很好。
+ 2. 主键应该是单列的，以便提高连接和筛选操作的效率。
+注：使用复合键的人通常有两个理由为自己开脱，而这两个理由都是错误的。其一是主键应当具有实际意义，然而，让主键具有意义只不过是给人为地破坏数据库提供了方便。其二是利用这种方法可以在描述多对多关系的连接表中使用两个外部键来作为主键，我也反对这种做法，理由是：复合主键常常导致不良的外键，即当连接表成为另一个从表的主表，而依据上面的第二种方法成为这个表主键的一部分，然，这个表又有可能再成为其它从表的主表，其主键又有可能成了其它从表主键的一部分，如此传递下去，越靠后的从表，其主键将会包含越多的列了。
+ 3. 永远也不要更新主键。实际上，因为主键除了惟一地标识一行之外，再没有其他的用途了，所以也就没有理由去对它更新。如果主键需要更新，则说明主键应对用户无意义的原则被违反了。
+注：这项原则对于那些经常需要在数据转换或多数据库合并时进行数据整理的数据并不适用。
+ 4. 主键不应包含动态变化的数据，如时间戳、创建时间列、修改时间列等。
+ 5. 主键应当有计算机自动生成。如果由人来对主键的创建进行干预，就会使它带有除了惟一标识一行以外的意义。一旦越过这个界限，就可能产生认为修改主键的动机，这样，这种系统用来链接记录行、管理记录行的关键手段就会落入不了解数据库设计的人的手中。
+</code></pre>
 	</div>
 
 	<div>
@@ -163,13 +176,13 @@
 <ul class="pagination">
 	 
 		
-    	<li class="prev"><a href="/2015/01/18/php-mvc/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
-  		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
 
         <li><a href="//"><i class="fa fa-archive"></i>Archive</a></li>
 
 		
-		   <li class="next"><a href="/2015/01/07/myeclipse-hotkey/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
+		   <li class="next"><a href="/2015/04/06/javaee-13-core-tech/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
         
 	
 </ul>
@@ -216,7 +229,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	Jan 17 2015
+	Apr 9 2015
 	</div>
 	
 
@@ -242,7 +255,7 @@
     <ul id="tags" class="tag_box list-unstyled collapse in">
 	    <!-- _partial/post/tag -->
   
-  <li><a href="/tags/SQL/">SQL<span>1</span></a></li> <li><a href="/tags/乱码/">乱码<span>1</span></a></li>
+  <li><a href="/tags/主键/">主键<span>1</span></a></li>
 
     </ul>
 	</div>

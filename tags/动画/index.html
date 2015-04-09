@@ -188,14 +188,17 @@
 <div class="panel-body">
   <div class="row">
   
-	<div class="col-md-12">
-	  
+	<div class="col-md-8">
+	
 	
 	  <p>20行CSS3代码即可构建一个三维立方体以及它旋转的动画。</p>
 <p>先说CSS3的几个知识点：<br>1.transform<br>transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。详见：<a href="http://www.w3school.com.cn/css3/css3_3dtransform.asp">W3School 3D转换</a></p>
 <p>2.@keyframes<br>@keyframes 规则用于创建动画。在 @keyframes 中规定某项 CSS 样式，就能创建由当前样式逐渐改为新样式的动画效果。详见：<a href="http://www.w3school.com.cn/css3/css3_animation.asp">W3School 3D动画</a></p>
-<p>了解了这两个知识点下的相关的属性后，在技术上已经学完了。剩下关键的就是创建立方体的思路了。<br>立方体通过包含6个li标签的一个ul来承载，一个li代表立方体的一面，前四个li代表立方体的前面，上面，后面和下面，第5、6个li代表立方体的左面和右面。<br>建立右手空间直角坐标系，第1个li于不用旋转，平面延Z轴正方向平移至前面；第2个li延X轴正方向顺时针旋转90度，<strong>整个坐标系跟随旋转90度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至上面；第3、4个li是同理的，第3个li延X轴正方向顺时针旋转180度，<strong>整个坐标系跟随旋转180度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至后面；第4个li延X轴正方向顺时针旋转270度，<strong>整个坐标系跟随旋转270度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至下面；第5个li延Y轴正方形顺时针旋转90度，<strong>整个坐标系跟随旋转90度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至左面；第6个li延Y轴正方形顺时针旋转270度，<strong>整个坐标系跟随旋转270度</strong>，然后再延旋转后的坐标系的Z轴正方向平移至右面。那么立方体就构建完成了。<br>立方体构建出来之后，可以通过分别延X轴和Y轴旋转360度实现立方体旋转展示的动画了。<br>
 	
+	</div>
+	
+	<div class="col-md-4">
+	  <div class="thumbnail"><a href="/2015/02/14/css3-3d-cube/"><img src="/img/css3-3d-cube.png" alt="CSS3编写3D立方体动画"  class="nofancybox"></a></div>
 	</div>
 	
 
@@ -260,7 +263,7 @@
 		
 			<li><a href="/categories/开发工具/">开发工具<span>1</span></a></li>
 		
-			<li><a href="/categories/数据库/">数据库<span>1</span></a></li>
+			<li><a href="/categories/数据库/">数据库<span>2</span></a></li>
 		
 			<li><a href="/categories/杂记/">杂记<span>3</span></a></li>
 		
@@ -277,51 +280,53 @@
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/主键/">主键</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">2&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/HTTP状态码/">HTTP状态码</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">4&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/MVC/">MVC</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">2&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">4&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 		</ul>
 	</div>
@@ -335,6 +340,10 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2015/04/09/principle-for-primary-key-design/" ><i class="fa fa-file-o"></i>数据表主键的设计原则...</a>
+      </li>
+    
+      <li>
         <a href="/2015/04/06/javaee-13-core-tech/" ><i class="fa fa-file-o"></i>Java EE的13种核心技术...</a>
       </li>
     
@@ -343,15 +352,11 @@
       </li>
     
       <li>
-        <a href="/2015/03/19/change-notebook-315/" ><i class="fa fa-file-o"></i>笔记本电脑三包维权记...</a>
+        <a href="/2015/03/19/change-notebook-315/"  title="华硕笔记本电脑保修期内一年坏四次，艰辛维权换货纪实。" ><i class="fa fa-file-o"></i>笔记本电脑三包维权记...</a>
       </li>
     
       <li>
         <a href="/2015/02/20/http-status-code/" ><i class="fa fa-file-o"></i>HTTP状态码...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/20/high-performance-css3-animation/" ><i class="fa fa-file-o"></i>(转)高性能 CSS3 动画...</a>
       </li>
     
   </ul>
