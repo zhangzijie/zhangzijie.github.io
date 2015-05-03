@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="/js/jquery-2.0.3.min.js"></script>
   <!-- analytics -->
   <!-- _partial/post/google_analytics -->
@@ -114,7 +114,7 @@
     <div class="content">
         <!-- index -->
 <div class="jumbotron page-header bg-primary">
-  <div class="col-md-3"><img src="/img/logo.png" alt="张子杰的博客网站LOGO"></div>
+  <div class="col-md-3"><img src="/img/logo.png" alt="张子杰的博客网站LOGO "></div>
   <h3 id="subtitle">欢迎来到张子杰的博客</h3>
   <h4 id="motto">Plan--Do--Check--Act</h4>
 </div>
@@ -126,6 +126,50 @@
 		<div class="mypage">
 			<!-- title and entry -->
 			<div class="panel panel-default">
+				
+					<!-- _partial/post/title -->
+<div class="panel-heading">
+
+	
+	<!-- display as entry -->
+		<h3 class="xtitle">
+			<a href="/2015/02/20/http-status-code/" >HTTP状态码</a>
+			<span class="text-muted pull-right"><small> Feb 20 2015 </small></span>
+		</h3>
+	
+
+</div>
+
+					<!-- _partial/post/entry -->
+<div class="panel-body">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <p>1xx - 信息提示 </p>
+<p>这些状态代码表示临时的响应。客户端在收到常规响应之前，应准备接收一个或多个 1xx 响应。 </p>
+<ul>
+<li>100 - Continue 初始的请求已经接受，客户应当继续发送请求的其余部分。（HTTP 1.1新） </li>
+<li>101 - Switching Protocols 服务器将遵从客户的请求转换到另外一种协议（HTTP 1.1新） </li>
+</ul>
+<p>2xx - 成功 </p>
+<p>这类状态代码表明服务器成功地接受了客户端请求。 </p>
+<ul>
+<li>200 - OK 一切正常，对GET和POST请求的应答文档跟在后面。 </li>
+<li>201 - Created 服务器已经创建了文档，Location头给出了它的URL。 </li>
+<li>202 - Accepted 已经接受请求，但处理尚未完成。 </li>
+<li>203 - Non-Authoritative Information 文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝，非权威性信息（HTTP 1.1新）。 </li>
+<li>204 - No Content 没有新文档，浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的。 </li>
+<li>205 - Reset Content 没有新的内容，但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容（HTTP 1.1新）。 </li>
+<li>206 - Partial Content 客户发送了一个带有Range头的GET请求，服务器完成了它（HTTP 1.1新）。
+	
+	</div>
+	
+</div>
+	<a type="button" href="/2015/02/20/http-status-code/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
 				
 					<!-- _partial/post/title -->
 <div class="panel-heading">
@@ -255,41 +299,6 @@
 </div>
 
 				
-					<!-- _partial/post/title -->
-<div class="panel-heading">
-
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/2015/01/29/java-minutia/" >Java的几个小细节</a>
-			<span class="text-muted pull-right"><small> Jan 29 2015 </small></span>
-		</h3>
-	
-
-</div>
-
-					<!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>1.获取子字符串时确定起始位置和结束位置<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">substring</span><span class="params">(<span class="keyword">int</span> beginIndex,<span class="keyword">int</span> endIndex)</span></span>;</span><br></pre></td></tr></table></figure></p>
-<p>beginIndex - 起始索引（包括起始的那一位）。<br>endIndex - 结束索引（不包括起始的那一位）。</p>
-<p>2.获取伪随机数时确定取值范围<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">nextInt</span><span class="params">(<span class="keyword">int</span> n)</span></span>;</span><br></pre></td></tr></table></figure></p>
-<p>返回一个伪随机数，它是取自此随机数生成器序列的、在 0（包括）和指定值n（不包括）之间均匀分布的 int 值。</p>
-<p>3.判断字符串是否相同<br>例如判断字符串变量str1是否为”test”字符串。要写成：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"test"</span>.equals(str1);</span><br></pre></td></tr></table></figure></p>
-<p>最好不要写成str1.equals(“test”);,因为当str1为空时，会出错。</p>
-
-	
-	</div>
-	
-</div>
-	<a type="button" href="/2015/01/29/java-minutia/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-				
 			</div>
 			<!-- pagination -->
 			<div>
@@ -344,7 +353,7 @@
 		
 			<li><a href="/categories/数据库/">数据库<span>2</span></a></li>
 		
-			<li><a href="/categories/杂记/">杂记<span>3</span></a></li>
+			<li><a href="/categories/杂记/">杂记<span>4</span></a></li>
 		
 			<li><a href="/categories/转载/">转载<span>2</span></a></li>
 		
@@ -359,53 +368,55 @@
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">4&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/主键/">主键</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/HTTP状态码/">HTTP状态码</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">4&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">2&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/MVC/">MVC</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/HTTP状态码/">HTTP状态码</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">5&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/MVC/">MVC</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/EditPlus/">EditPlus</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/主键/">主键</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 		</ul>
 	</div>
@@ -417,6 +428,10 @@
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2015/05/03/editplus-install/" ><i class="fa fa-file-o"></i>EditPlus的注册与汉化...</a>
+      </li>
     
       <li>
         <a href="/2015/04/09/principle-for-primary-key-design/" ><i class="fa fa-file-o"></i>数据表主键的设计原则...</a>
@@ -432,10 +447,6 @@
     
       <li>
         <a href="/2015/03/19/change-notebook-315/"  title="华硕笔记本电脑保修期内一年坏四次，艰辛维权换货纪实。" ><i class="fa fa-file-o"></i>笔记本电脑三包维权记...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/20/http-status-code/" ><i class="fa fa-file-o"></i>HTTP状态码...</a>
       </li>
     
   </ul>
