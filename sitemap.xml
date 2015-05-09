@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhangzj.com/2015/05/09/java-io-stream-comparison/</loc>
+    <lastmod>2015-05-09T08:56:32.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://zhangzj.com/2015/05/03/editplus-install/</loc>
     <lastmod>2015-05-03T08:19:58.000Z</lastmod>
   </url>
