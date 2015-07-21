@@ -134,6 +134,37 @@
 	
 	<!-- display as entry -->
 		<h3 class="xtitle">
+			<a href="/2015/07/21/equals-function-and-equality-sign/" >equals函数与==的区别以及为空判断为什么null放前</a>
+			<span class="text-muted pull-right"><small> Jul 21 2015 </small></span>
+		</h3>
+	
+
+</div>
+
+	  <!-- _partial/post/entry -->
+<div class="panel-body">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <p>equals只是比较两者的值是否相同<br>而==则是比较两个变量是不是同一个变量，也就是说<br>要看看这两个变量是不是指向的同一个地址，<br>java中只有引用地址相同的两个变量才被视为==<br>如果明白值传递与地址传递的话，这个问题应该不难理解</p>
+<p>null放在前面就是为了避免变量为空时引的空指针异常<br>如：if(a==null)如果a真为空时，现在就相当用调用了变量a的方法，a都为空了还调用他的方法，当然会引发空指针异常了，但写成if(null==a)就不会了。</p>
+
+	
+	</div>
+	
+</div>
+	<a type="button" href="/2015/07/21/equals-function-and-equality-sign/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+	  
+	  <!-- _partial/post/title -->
+<div class="panel-heading">
+
+	
+	<!-- display as entry -->
+		<h3 class="xtitle">
 			<a href="/2015/05/09/java-io-stream-comparison/" >(转)字节流与字符流的区别</a>
 			<span class="text-muted pull-right"><small> May 9 2015 </small></span>
 		</h3>
@@ -256,43 +287,12 @@
 </div>
 
 	  
-	  <!-- _partial/post/title -->
-<div class="panel-heading">
-
-	
-	<!-- display as entry -->
-		<h3 class="xtitle">
-			<a href="/2015/01/07/myeclipse-hotkey/" >MyEclipse常用快捷键</a>
-			<span class="text-muted pull-right"><small> Jan 7 2015 </small></span>
-		</h3>
-	
-
-</div>
-
-	  <!-- _partial/post/entry -->
-<div class="panel-body">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>MyEclipse或Eclipse编写Java程序时的常用快捷键：</p>
-<p>Ctrl+1：快速修复键，万能键，提供错误修复建议<br>Alt+/：内容提示键<br>Ctrl+Shift+o：包整理键<br>Ctrl+Shift+F：自动格式化代码（但格式化后可能会与公司要求格式不同）<br>Ctrl+Shift+/：添加（除去）块注释<br>Ctrl+Alt+↑或↓：复制行到上面或下面<br>Alt+Shift+M：提取方法</p>
-
-	
-	</div>
-	
-</div>
-	<a type="button" href="/2015/01/07/myeclipse-hotkey/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-	  
 	  </div>
 	  <div>
 	  <center>
 	  <!-- _partial/index_pagination -->
 <nav id="page-nav">
-	<span class="page-number current">1</span>
+	<span class="page-number current">1</span><a class="page-number" href="/tags/Java/page/2/">2</a><a class="extend next" rel="next" href="/tags/Java/page/2/">下一页<i class="fa fa-arrow-circle-o-right"></i></a>
 </nav>
 
 	  </center>
@@ -326,7 +326,7 @@
 		<h4>分类</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/Java/">Java<span>4</span></a></li>
+			<li><a href="/categories/Java/">Java<span>5</span></a></li>
 		
 			<li><a href="/categories/PHP/">PHP<span>1</span></a></li>
 		
@@ -338,7 +338,7 @@
 		
 			<li><a href="/categories/开发工具/">开发工具<span>1</span></a></li>
 		
-			<li><a href="/categories/数据库/">数据库<span>2</span></a></li>
+			<li><a href="/categories/数据库/">数据库<span>3</span></a></li>
 		
 			<li><a href="/categories/杂记/">杂记<span>4</span></a></li>
 		
@@ -355,43 +355,47 @@
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/主键/">主键</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/杂记/">杂记</a><span class="tag-list-count">5&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/IO流/">IO流</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">5&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
-		
 			<li><a class="tag-list-link" href="/tags/工具箱/">工具箱</a><span class="tag-list-count">2&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
-		
-			<li><a class="tag-list-link" href="/tags/EditPlus/">EditPlus</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/MVC/">MVC</a><span class="tag-list-count">1&nbsp;</span></li>
 		
+			<li><a class="tag-list-link" href="/tags/经验/">经验</a><span class="tag-list-count">1&nbsp;</span></li>
+		
 			<li><a class="tag-list-link" href="/tags/公告/">公告</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/MyEclipse/">MyEclipse</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/EditPlus/">EditPlus</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/日期格式化输出/">日期格式化输出</a><span class="tag-list-count">1&nbsp;</span></li>
 		
+			<li><a class="tag-list-link" href="/tags/equals/">equals</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/纠错/">纠错</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">6&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/ASCII码表/">ASCII码表</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/数据库/">数据库</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/JavaEE/">JavaEE</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
+		
 			<li><a class="tag-list-link" href="/tags/细节/">细节</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/IO流/">IO流</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 			<li><a class="tag-list-link" href="/tags/SQL/">SQL</a><span class="tag-list-count">1&nbsp;</span></li>
 		
@@ -399,13 +403,15 @@
 		
 			<li><a class="tag-list-link" href="/tags/HTTP状态码/">HTTP状态码</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/乱码/">乱码</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/转载/">转载</a><span class="tag-list-count">2&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/维权/">维权</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/核心技术/">核心技术</a><span class="tag-list-count">1&nbsp;</span></li>
 		
-			<li><a class="tag-list-link" href="/tags/主键/">主键</a><span class="tag-list-count">1&nbsp;</span></li>
+			<li><a class="tag-list-link" href="/tags/Eclipse/">Eclipse</a><span class="tag-list-count">1&nbsp;</span></li>
+		
+			<li><a class="tag-list-link" href="/tags/查询优化/">查询优化</a><span class="tag-list-count">1&nbsp;</span></li>
 		
 		</ul>
 	</div>
@@ -419,6 +425,14 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2015/07/21/optimization-multi-table-query/" ><i class="fa fa-file-o"></i>联表查询优化...</a>
+      </li>
+    
+      <li>
+        <a href="/2015/07/21/equals-function-and-equality-sign/" ><i class="fa fa-file-o"></i>equals函数与==的区别以及为空判断为什么null...</a>
+      </li>
+    
+      <li>
         <a href="/2015/05/09/java-io-stream-comparison/" ><i class="fa fa-file-o"></i>(转)字节流与字符流的区别...</a>
       </li>
     
@@ -428,14 +442,6 @@
     
       <li>
         <a href="/2015/04/09/principle-for-primary-key-design/" ><i class="fa fa-file-o"></i>数据表主键的设计原则...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/04/06/javaee-13-core-tech/" ><i class="fa fa-file-o"></i>Java EE的13种核心技术...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/04/06/notice-tmp/" ><i class="fa fa-file-o"></i>关于收到多封验证Apple ID邮件的公告...</a>
       </li>
     
   </ul>

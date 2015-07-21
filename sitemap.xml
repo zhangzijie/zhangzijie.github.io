@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhangzj.com/2015/07/21/optimization-multi-table-query/</loc>
+    <lastmod>2015-07-21T13:16:29.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zhangzj.com/2015/07/21/equals-function-and-equality-sign/</loc>
+    <lastmod>2015-07-21T13:16:23.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://zhangzj.com/2015/05/09/java-io-stream-comparison/</loc>
     <lastmod>2015-05-09T08:56:32.000Z</lastmod>
   </url>
