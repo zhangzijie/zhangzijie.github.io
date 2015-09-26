@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于收到多封验证Apple ID邮件的公告 | 张子杰的博客</title>
+  <title>私人共享文件权限验证 | 张子杰的博客</title>
   <meta name="author" content="张子杰">
   
   <meta name="description" content="欢迎来到张子杰的Github博客。">
   
-  <meta name="keywords" content="张子杰,博客,公告,杂记">
+  <meta name="keywords" content="张子杰,博客">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:title" content="关于收到多封验证Apple ID邮件的公告"/>
+  <meta property="og:title" content="私人共享文件权限验证"/>
   <meta property="og:site_name" content="张子杰的博客"/>
   
     <meta property="og:image" content="/img/logo2.png"/>
@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
   <script src="/js/jquery-2.0.3.min.js"></script>
   <!-- analytics -->
   <!-- _partial/post/google_analytics -->
@@ -37,15 +37,6 @@
   <meta name="msvalidate.01" content="C14C91E65E6A27FD03D26391E29BB2E7" />
   <meta name="shenma-site-verification" content="9371bdccb3b7d9f3b700285b0271b069" />
   <meta name="google-site-verification" content="na-P7V2fYBnMhXbCm0c55oRF5ETB5rxDJnAI10SBVis" />
-  <script>
-	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "//hm.baidu.com/hm.js?173d7ff2c96464fcd08f3e1baafd4f12";
-		var s = document.getElementsByTagName("script")[0]; 
-		s.parentNode.insertBefore(hm, s);
-	})();
-  </script>
 </head>
 
 <body>
@@ -75,13 +66,13 @@
 		  </li>
 		  
 		  <li>
-			<a href="http://download.zhangzj.com/" title="Data download.">
+			<a href="http://zhangzj.com/download/" title="Data download.">
 			  <i class="fa fa-download"></i>下载
 			</a>
 		  </li>
 		  
 		  <li>
-			<a href="https://exmail.qq.com/login/" title="Mail service.">
+			<a href="http://mail.zhangzj.com/" title="Mail service.">
 			  <i class="fa fa-envelope-o"></i>邮箱
 			</a>
 		  </li>
@@ -112,8 +103,7 @@
 
   <div class="container">
     <div class="content">
-        <!-- post -->
-
+        <!-- page -->
 <!-- _partial/article -->
 <!-- _partial/post/title -->
 <div class="panel-heading">
@@ -121,27 +111,28 @@
 	
   <!-- display as page -->
 		<div class="page-header">
-			<h1> 关于收到多封验证Apple ID邮件的公告</h1>
+			<h1> 私人共享文件权限验证</h1>
 		</div>
 	
 
 </div>
 
-<div class="row post">
+<div class="row page">
 	<!-- cols -->
 	
-	<div class="col-md-9">
+	<div class="col-md-12">
 	
 	
 	<!-- content -->
 	<div class="mypage">
-	    <p><img src="/img/notice-tmp.png" alt="收到多封验证Apple ID邮件"></p>
-<p>今天(4月6日)上午9点至10点，本站邮箱接连收到7封题为“验证您的 Apple ID”的邮件，邮件的发件邮箱均为：appleid@id.apple.com，收件邮箱均为zhang@zhangzj.com，内容为张姣（先生/女士）选择了zhang@zhangzj.com邮箱作为该用户的Apple ID，需要验证邮箱。</p>
-<p>本站是提供有限的免费域名邮箱服务的，希望这位张姣（先生/女士）看到本公告后尽快联系本站。</p>
-<p>如果大家喜欢@zhangzj.com的域名邮箱，同时保证不会使用该域名邮箱从事非法事务的，可联系本站申请注册免费的域名邮箱。</p>
-<p>联系方式：zzj@zhangzj.com</p>
-<p>zhangzj.com<br>2015年04月06日</p>
-
+	    <div>
+	<form name="input" action="confirm.php" method="post">
+		<p>请先验证权限</p>
+		<p>用户名：<input type="text" name="user"></p>
+		<p>密码：<input type="password" name="password"></p>
+		<p><input type="submit" value="验证"></p>
+	</form>
+</div>
 	</div>
 	<div>
   	<center>
@@ -149,14 +140,6 @@
 <div class="pagination">
 <ul class="pagination">
 	 
-		
-    	<li class="prev"><a href="/2015/04/06/javaee-13-core-tech/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
-  		
-        <li><a href="//archives/"><i class="fa fa-archive"></i>Archive</a></li>
-		
-		   <li class="next"><a href="/2015/03/19/change-notebook-315/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
-        
-	
 </ul>
 </div>
 
@@ -165,71 +148,8 @@
 	<!-- comment -->
 	<!-- _partial/post/comment -->
 
-<section id="comment">
-  <h2 class="title">留言</h2>
-<div id="SOHUCS"></div>
-<script>
-  (function(){
-    var appid = 'cyrsDVJnc',
-    conf = 'prod_c8539201390e5a8426def87503b533cc';
-    var doc = document,
-    s = doc.createElement('script'),
-    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-    s.type = 'text/javascript';
-    s.charset = 'utf-8';
-    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
-    h.insertBefore(s,h.firstChild);
-    window.SCS_NO_IFRAME = true;
-  })()
-</script>                
-  
-</section>
-
 
 	</div> <!-- col-md-9/col-md-12 -->
-	
-		<!-- _partial/post/meta -->
-<div class="col-md-3"> 
-	<!-- date -->
-	
-	<div class="meta-widget">
-	<i class="fa fa-clock-o"></i>
-	Apr 6 2015
-	</div>
-	
-	<!-- categories -->
-    
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>
-    <ul id="categorys" class="tag_box list-unstyled collapse in">
-        <!-- _partial/post/category -->
-  
-  <li>
-    <li><a href="/categories/杂记/">杂记<span>4</span></a></li>
-  </li>
-
-    </ul>
-	</div>
-	
-	<!-- tags -->
-	
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
-    <ul id="tags" class="tag_box list-unstyled collapse in">
-	    <!-- _partial/post/tag -->
-  
-  <li><a href="/tags/公告/">公告<span>1</span></a></li> <li><a href="/tags/杂记/">杂记<span>5</span></a></li>
-
-    </ul>
-	</div>
-	
-	<!-- toc -->
-	<div class="meta-widget">
-	
-	</div>
-    <hr>
-</div><!-- col-md-3 -->
-
 	
 </div><!-- row -->
 
@@ -251,8 +171,8 @@
 </div>
 <div class="pull-right">
   <ul class="inline list-inline foot-icon">
-	<li><a href="http://zhanzhang.anquan.org/physical/report/?domain=www.zhangzj.com" name="JhJfuNBAoEYAOhT9DbfQJWhPaaoDeqUxzW4ALCGV9emI8OgImk" target="_blank"><img height="47" src="http://zhanzhang.anquan.org/static/common/images/zhanzhang.png" alt="安全联盟站长平台" /></a></li>
-    <li><a href="http://webscan.360.cn/index/checkwebsite/url/zhangzj.com" target="_blank"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/295fd5933a27ae2eec30a188d85ad61a" alt="360网站安全检测"/></a></li>
+	<li><a href="http://zhanzhang.anquan.org/physical/report/?domain=www.zhangzj.com" name="JhJfuNBAoEYAOhT9DbfQJWhPaaoDeqUxzW4ALCGV9emI8OgImk" target="_blank"><img height="47" src="/img/zhanzhang.png" alt="安全联盟站长平台" /></a></li>
+    <li><a href="http://webscan.360.cn/index/checkwebsite/url/zhangzj.com" target="_blank"><img border="0" src="/img/360.png" alt="360网站安全检测"/></a></li>
 	<li><script type="text/javascript">     var locationUrl = escape(document.location.href);     document.write(unescape("%3Cscript")+" charset='utf-8' src='http://union.rising.com.cn//InfoManage/TrojanInspect.aspx?p1=n2NcF96gOLA9Z58CaYNN8usYQwa-iyk8WU3Ux-UBl-w=&p2=PeqIkh03xcY=&p3=n2NcF96gOLA9Z58CaYNN8nWyBHKenNUM&url="+ locationUrl  + "' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script></li>
   </ul>
 </div> </footer>

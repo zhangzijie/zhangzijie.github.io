@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE files SYSTEM "downloadList.dtd">
+<files>
+    <file id="dl001">
+        <name>XHTML参考手册</name>
+        <type>chm</type>
+        <size>287KB</size>
+        <description>XHTML 参考手册</description>
+        <link>http://download.zhangzj.com/download/XHTML-manual.chm</link>
+    </file>
+    <file id="dl002">
+        <name>HTML5参考手册</name>
+        <type>chm</type>
+        <size>194KB</size>
+        <description>HTML5 参考手册</description>
+        <link>http://download.zhangzj.com/download/HTML5-manual.chm</link>
+    </file>
+    <file id="dl003">
+        <name>CSS 2.0参考手册</name>
+        <type>chm</type>
+        <size>258KB</size>
+        <description>CSS 2.0 参考手册</description>
+        <link>http://download.zhangzj.com/download/CSS-2.0.chm</link>
+    </file>
+    <file id="dl004">
+        <name>CSS 3.0参考手册</name>
+        <type>chm</type>
+        <size>380KB</size>
+        <description>CSS 3.0 参考手册</description>
+        <link>http://download.zhangzj.com/download/CSS-3.0.chm</link>
+    </file>
+    <file id="dl005">
+        <name>JavaScript核心参考手册</name>
+        <type>chm</type>
+        <size>300KB</size>
+        <description>JavaScript核心参考手册  2008年版</description>
+        <link>http://download.zhangzj.com/download/JavaScript-API.chm</link>
+    </file>
+    <file id="dl006">
+        <name>JScript参考手册</name>
+        <type>chm</type>
+        <size>602KB</size>
+        <description>JScript参考手册  2000年版</description>
+        <link>http://download.zhangzj.com/download/JScript-API.chm</link>
+    </file>
+    <file id="dl007">
+        <name>jQuery 1.4参考手册</name>
+        <type>chm</type>
+        <size>489KB</size>
+        <description>jQuery 1.4参考手册</description>
+        <link>http://download.zhangzj.com/download/jQuery-1.4.chm</link>
+    </file>
+    <file id="dl008">
+        <name>jQuery 1.10参考手册</name>
+        <type>chm</type>
+        <size>399KB</size>
+        <description>jQuery 1.10参考手册</description>
+        <link>http://download.zhangzj.com/download/jQuery-1.10.chm</link>
+    </file>
+    <file id="dl009">
+        <name>Java 1.6中文手册</name>
+        <type>chm</type>
+        <size>35.12MB</size>
+        <description>Java 1.6 API帮助文档 中文版</description>
+        <link>http://download.zhangzj.com/download/Java-1.6-API.chm</link>
+    </file>
+    <file id="dl010">
+        <name>PHP 2014中文手册</name>
+        <type>chm</type>
+        <size>18.18MB</size>
+        <description>PHP 2014中文手册</description>
+        <link>http://download.zhangzj.com/download/PHP-2014-API.chm</link>
+    </file>
+    <file id="dl011">
+        <name>SQL参考手册</name>
+        <type>chm</type>
+        <size>215KB</size>
+        <description>Microsoft Jet SQL 参考</description>
+        <link>http://download.zhangzj.com/download/Microsoft-Jet-SQL.chm</link>
+    </file>
+    <file id="dl012">
+        <name>ORACLE九阴真经</name>
+        <type>chm</type>
+        <size>62KB</size>
+        <description>ORACLE九阴真经</description>
+        <link>http://download.zhangzj.com/download/ORACLE-jyzj.chm</link>
+    </file>
+    <file id="dl013">
+        <name>腾讯前端代码规范</name>
+        <type>chm</type>
+        <size>41KB</size>
+        <description>腾讯AlloyTeam前端代码规范</description>
+        <link>http://download.zhangzj.com/download/AlloyTeam-code-guide.chm</link>
+    </file>
+    <file id="dl014">
+        <name>W3School离线手册</name>
+        <type>chm</type>
+        <size>12.94MB</size>
+        <description>W3School离线手册 2014.7.8版</description>
+        <link>http://download.zhangzj.com/download/W3School-2014.7.8.chm</link>
+    </file>
+	<file id="dl015">
+        <name>Google Java编程风格指南</name>
+        <type>chm</type>
+        <size>287KB</size>
+        <description>Google Java编程风格指南 中文版 2014.1.20</description>
+        <link>http://download.zhangzj.com/download/W3School-2014.7.8.chm</link>
+    </file>
+	<file id="dl016">
+        <name>Java Servlet 2.4 英文文档</name>
+        <type>chm</type>
+        <size>1.85MB</size>
+        <description>Java Servlet 2.4 英文文档</description>
+        <link>http://download.zhangzj.com/download/Java-Servlet-Development-Kit-2.4-DocumenTation.chm</link>
+    </file>
+	<file id="dl017">
+        <name>Apache2.2 中文手册</name>
+        <type>chm</type>
+        <size>1.32MB</size>
+        <description>Apache2.2 中文手册</description>
+        <link>http://download.zhangzj.com/download/Apache-2.2.chm</link>
+    </file>
+	<file id="dl018">
+        <name>Apache2.4 中文手册</name>
+        <type>chm</type>
+        <size>1.47MB</size>
+        <description>Apache2.4 中文手册</description>
+        <link>http://download.zhangzj.com/download/Apache-2.4.chm</link>
+    </file>
+</files>
