@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>终于配好环境了 | 张子杰的博客</title>
+  <title>支付宝控件占内存的原因 | 张子杰的博客</title>
   <meta name="author" content="张子杰">
   
   <meta name="description" content="欢迎来到张子杰的Github博客。">
   
-  <meta name="keywords" content="张子杰,博客">
+  <meta name="keywords" content="张子杰,博客,支付宝控件,占内存">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:title" content="终于配好环境了"/>
+  <meta property="og:title" content="支付宝控件占内存的原因"/>
   <meta property="og:site_name" content="张子杰的博客"/>
   
     <meta property="og:image" content="/img/logo2.png"/>
@@ -112,7 +112,7 @@
 	
   <!-- display as page -->
 		<div class="page-header">
-			<h1> 终于配好环境了</h1>
+			<h1> 支付宝控件占内存的原因</h1>
 		</div>
 	
 
@@ -126,7 +126,10 @@
 	
 	<!-- content -->
 	<div class="mypage">
-	    <p>折腾了好几天，博客终于配置好了，从github怎么用都不知道，到学着配置jekyll，到jekyll-bootstrap，再到hexo，最后发现还是hexo最方便快捷。之前虽然也做过简单的个人网站，但是还没用过静态博客的，希望今后能更多的了解静态博客的使用，同时养成 <strong>坚持写博客</strong>的习惯。</p>
+	    <p>最近发现支付宝安全控件的进程经常占用十几兆内存，比杀毒软件还厉害，而且经常处于活跃状态。所以查了一下，发现原来是因为这些进程以循环的方式反复调用了沉重的WTSEnumerate-Sessions API和Process32Next API，而且API执行不顺利，导致了大量的缺页异常。</p>
+<a id="more"></a>
+<p>详细分析由于原文禁止转载，所以这里给出链接：<a href="http://www.csdn.net/article/2014-09-16/2821705" target="_blank" rel="external">《程序员》杂志文章《在调试器中看阿里的软件兵团》</a></p>
+
 	</div>
 	<div>
   	<center>
@@ -135,11 +138,11 @@
 <ul class="pagination">
 	 
 		
-    	<li class="prev"><a href="/2014/12/21/li-with-inline-block/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
-  		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
         <li><a href="//archives/"><i class="fa fa-archive"></i>Archive</a></li>
 		
-		   <li class="next"><a href="/1899/11/30/editplus-install/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
+		   <li class="next"><a href="/2015/09/25/https-available/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
         
 	
 </ul>
@@ -179,7 +182,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	Dec 16 2014
+	Oct 12 2015
 	</div>
 	
 	<!-- categories -->
