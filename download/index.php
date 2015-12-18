@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title><?php $id = $_GET['id'];$xml = simplexml_load_file('downloadList.xml');$result = $xml->xpath("/files/file[@id='".$id."']");$array = (array) ($result[0]);echo $array['name']?> | 张子杰的博客</title>
+  <title>下载 | 张子杰的博客</title>
   <meta name="author" content="张子杰">
   
   <meta name="description" content="欢迎来到张子杰的Github博客。">
@@ -113,21 +113,17 @@
 		<div class="content">
 			<!-- download container -->
             <div>
-                <h3>下载详情</h3>
+				<h3>下载列表</h3>
                 <ul>
-                    <?php 
-                    $id = $_GET['id'];
-                    $xml = simplexml_load_file('downloadList.xml'); //读取 XML文件 
-                    $result = $xml->xpath("/files/file[@id='".$id."']"); //定义节点 
-                    $array = (array) ($result[0]);
-                    echo '<li>文件名：'.$array['name'].'</li>';
-                    echo '<li>文件类型：'.$array['type'].'</li>';
-                    echo '<li>文件大小：'.$array['size'].'</li>';
-                    echo '<li>文件描述：'.$array['description'].'</li>';
-                    echo '<li>下载地址：<a href="'.$array['link'].'">本地下载</a></li>';
-                    ?>
-                </ul>
-                <h5><a href='index.html'>返回</a></h5>
+					<?php 
+						$xml = simplexml_load_file('downloadList.xml'); //读取 XML文件 
+						foreach ($xml->children() as $file) {
+							if (null!=$file['id']) {
+								echo '<li><a href="downloadList.php?id='.$file['id'].'">'.$file->name.'</a></li>';
+							}
+						}
+					?>
+				</ul>
             </div>
         </div>
 		
