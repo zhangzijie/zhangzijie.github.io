@@ -127,7 +127,7 @@
                     echo '<li>下载地址：<a href="'.$array['link'].'">本地下载</a></li>';
                     ?>
                 </ul>
-                <h5><a href='index.html'>返回</a></h5>
+                <h5><a href='index.php'>返回</a></h5>
             </div>
         </div>
 		

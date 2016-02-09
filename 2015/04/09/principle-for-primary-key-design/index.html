@@ -164,21 +164,26 @@
 
 <section id="comment">
   <h2 class="title">留言</h2>
-<div id="SOHUCS"></div>
-<script>
-  (function(){
-    var appid = 'cyrsDVJnc',
-    conf = 'prod_c8539201390e5a8426def87503b533cc';
-    var doc = document,
-    s = doc.createElement('script'),
-    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-    s.type = 'text/javascript';
-    s.charset = 'utf-8';
-    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
-    h.insertBefore(s,h.firstChild);
-    window.SCS_NO_IFRAME = true;
-  })()
-</script>                
+
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="2015/04/09/principle-for-primary-key-design/" data-title="数据表主键的设计原则" data-url="http://zhangzj.com/2015/04/09/principle-for-primary-key-design/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"zhangzj"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
   
 </section>
 
@@ -242,7 +247,7 @@
   </p>
   <p>
   
-  &copy; 2014-2015 by <a class="text-default" href="mailto:zzj@zhangzj.com" target="_blank">张子杰</a>
+  &copy; 2014-2016 by <a class="text-default" href="mailto:zzj@zhangzj.com" target="_blank">张子杰</a>
   &nbsp;
   </p>
 </div>
