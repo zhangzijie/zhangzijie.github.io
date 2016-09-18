@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhangzj.com/about/index.html</loc>
+    <lastmod>2016-09-18T13:42:26.532Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://zhangzj.com/2015/10/12/alipay-security-control-occupy-memory/</loc>
     <lastmod>2015-10-12T05:13:50.556Z</lastmod>
   </url>
@@ -134,11 +139,6 @@
   <url>
     <loc>http://zhangzj.com/2015/02/01/60-problem-solving-strategies/</loc>
     <lastmod>2015-04-10T18:02:08.105Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://zhangzj.com/about/index.html</loc>
-    <lastmod>2015-04-09T18:10:03.643Z</lastmod>
   </url>
   
 </urlset>
